@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "SET DEBUG=umidade & nodemon ./src/server.js"
+    "start": "SET DEBUG=umidade & nodemon ./src/server.js",
+    "prd": "SET DEBUG=umidade & node ./src/server.js"
   },
   "author": "",
   "license": "ISC",
