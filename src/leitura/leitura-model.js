@@ -12,7 +12,7 @@ const LeituraSchema = new Schema({
     },
     data: {
         type: Date,
-        default: new Date
+        require: true
     }
 });
 

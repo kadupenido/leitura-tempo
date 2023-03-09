@@ -4,8 +4,13 @@ const moment = require('moment');
 module.exports.salvarLeitura = async (req, res, next) => {
     try {
         let leitura = new Leitura(req.body);
+
+        leitura.data = moment();
+        console.log(leitura);
+
         leitura = await leitura.save();
         res.status(200).send(leitura);
+
     } catch (err) {
         res.status(500).send({
             message: err.message || err
